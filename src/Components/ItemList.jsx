@@ -1,24 +1,11 @@
 import React from 'react'
+import Item from './Item'
 
 const ItemList = ({instrumentos}) => {
 
-
-    // const lista = instrumentos.map((item) => {
-    //     console.log(item)
-    //     return ( <div>
-    //             <h2>{item.name}</h2>
-    //             <h3>${item.price}</h3>
-    //         </div>
-    //     )
-    // })  
   return (
     <div>
-        {/* {lista}  */}
-        {instrumentos.map((item) => <div>
-                <h2>{item.name}</h2>
-                <h3>${item.price}</h3>
-            </div>
-        )}
+        {instrumentos.map((item) => <Item key={item.id} item={item}/>)}
     </div>
   )
 }
