@@ -4,7 +4,7 @@ import Item from './Item'
 const ItemList = ({instrumentos}) => {
 
   return (
-    <div>
+    <div className='list'>
         {instrumentos.map((item) => <Item key={item.id} item={item}/>)}
     </div>
   )

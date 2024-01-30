@@ -15,11 +15,15 @@ const ItemListContainer = ({greeting}) => {
         fetchData()
         .then(res => setInstrumentos(res))
     }, [])
+
+    // Deberian hacer para la 2da pre-entrega
+        // Lógica para obtener mediante useParams() si existe tal category que muestre la lista filtrada (metodo .filter())
+    //
    
   return (
     <div>
-        <h1>{greeting}</h1>
-        <ItemList instrumentos={instrumentos}/>
+        <h1>Bienvenidos a Música del Alma</h1>
+        {instrumentos.length == 0 ? <h1>Cargando...</h1> : <ItemList instrumentos={instrumentos}/>}
     </div>
   )
 }
