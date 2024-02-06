@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import productos from '../instrumentos.json'
 import ItemList from './ItemList'
+import Loader from './Loader'
 
 const ItemListContainer = ({greeting}) => {
     const [instrumentos, setInstrumentos] = useState([])
@@ -23,7 +24,7 @@ const ItemListContainer = ({greeting}) => {
   return (
     <div>
         <h1>Bienvenidos a Música del Alma</h1>
-        {instrumentos.length == 0 ? <h1>Cargando...</h1> : <ItemList instrumentos={instrumentos}/>}
+        {instrumentos.length == 0 ? <Loader /> : <ItemList instrumentos={instrumentos}/>}
     </div>
   )
 }

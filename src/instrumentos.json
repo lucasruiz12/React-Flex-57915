@@ -13,7 +13,7 @@
       "name": "Teclado electrónico",
       "description": "Teclado electrónico versátil con múltiples funciones y sonidos.",
       "price": 8000,
-      "stock": 10,
+      "stock": 0,
       "category": "cuerdas"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Bajo eléctrico",
       "description": "Bajo eléctrico de 4 cuerdas ideal para músicos de rock y jazz.",
       "price": 9000,
-      "stock": 7,
+      "stock": 0,
       "category": "cuerdas"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Piano de cola",
       "description": "Piano de cola elegante con teclas de marfil y sonido excepcional.",
       "price": 25000,
-      "stock": 3,
+      "stock": 0,
       "category": "cuerdas"
     },
       {

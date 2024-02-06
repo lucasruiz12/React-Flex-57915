@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import ItemDetailContainer from './Components/ItemDetailContainer'
 import Contact from './Components/Contact'
 import Formulario from './Components/Formulario'
+import { ContextProvider } from './context/Context'
 
 function App() {
   // let routes = {
@@ -14,6 +15,7 @@ function App() {
   // }
   return (
     <div className='App'>
+      <ContextProvider>
       <Navbar/>
       {/* <Formulario/> */}
       <Routes>
@@ -22,6 +24,7 @@ function App() {
         <Route path='/product/:id' element={<ItemDetailContainer/>}/>
         <Route path='/contact' element={<Contact/>} />
       </Routes>
+      </ContextProvider>
     </div>
   )
 }
